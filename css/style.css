@@ -43,16 +43,21 @@ h3, .lavoro, a{
 }
 
 .col{
-    width: calc(100% / 3 - 80px);
-    background-color: black;
-    margin: 40px;
+    width: calc(100% / 3 - 60px);
+    background-color: rgb(20, 20, 20);
+    margin: 30px;
     float: left;
 }
 
+.contenuto-col::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 
 .conenuto-col{
-    background-color: black;
     width: 100%;
+    box-shadow: 0px 0px 10px black;
 }
 
 .foto{
@@ -69,6 +74,6 @@ h3, .lavoro, a{
 
 a{
     text-decoration: none;
-    color: rgb(0, 135, 255);
+    color: rgb(30, 150, 255);
 }
 /*fine main*/
